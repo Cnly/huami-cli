@@ -19,10 +19,17 @@
 使用方法
 --------
 
-    $ ./huami.py KEY
+    $ ./huami.py
+    Password:
+    Key: github.com
+    KEF2342511421312
+    
+或
+
+    $ ./huami.py github.com
     Password:
     KEF2342511421312
-
+    
 可以结合xclip，比如
 
     ./huami.py KEY | xclip -i
