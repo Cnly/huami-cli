@@ -40,7 +40,7 @@ if __name__ == "__main__":
     password = getpass.getpass("Password:")
 
     if len(sys.argv) != 2:
-        key = raw_input('Key:').strip()
+        key = raw_input('Key:')
     else:
         key = sys.argv[1]
 
