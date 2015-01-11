@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# coding=utf-8
+# coding=utf8
 # Huami CLI Version.
 # Author: Tao Yang (ninehills.github.com)
 # Origin: https://code.google.com/p/flower-password/
@@ -35,10 +35,13 @@ def huami(password, key):
     return code16
 
 if __name__ == "__main__":
+
+    import getpass
+    password = getpass.getpass("Password:")
+
     if len(sys.argv) != 2:
         key = raw_input('Key:').strip()
     else:
         key = sys.argv[1]
-    import getpass
-    password = getpass.getpass("Password:")
+
     print huami(password, key)
